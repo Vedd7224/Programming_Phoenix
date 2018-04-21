@@ -7,7 +7,7 @@ defmodule Rumbl.Video do
     field :description, :string
     belongs_to :user, Rumbl.User
 
-    timestamps
+    timestamps() 
   end
 
   @required_fields ~w(url title description)
